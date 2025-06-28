@@ -7,10 +7,10 @@
 <meta content="white" media="(prefers-color-scheme: light)" name="theme-color"/>
 <meta content="black" media="(prefers-color-scheme: dark)" name="theme-color"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Prompts | Arch Docs v0.1.5</title>
-<meta content="Prompts | Arch Docs v0.1.5" property="og:title"/>
-<meta content="Prompts | Arch Docs v0.1.5" name="twitter:title"/>
-<link href="../../_static/pygments.css?v=75ebff74" rel="stylesheet" type="text/css"/>
+<title>Prompts | Arch Docs v0.3.2</title>
+<meta content="Prompts | Arch Docs v0.3.2" property="og:title"/>
+<meta content="Prompts | Arch Docs v0.3.2" name="twitter:title"/>
+<link href="../../_static/pygments.css?v=466e7b45" rel="stylesheet" type="text/css"/>
 <link href="../../_static/theme.css?v=42baaae4" rel="stylesheet" type="text/css"/>
 <link href="../../_static/_static/custom.css" rel="stylesheet" type="text/css"/>
 <link href="../../_static/sphinx-design.min.css?v=95c83b7e" rel="stylesheet" type="text/css"/>
@@ -39,7 +39,7 @@
     </a><header class="sticky top-0 z-40 w-full border-b shadow-sm border-border supports-backdrop-blur:bg-background/60 bg-background/95 backdrop-blur"><div class="container flex items-center h-14">
 <div class="hidden mr-4 md:flex">
 <a class="flex items-center mr-6" href="../../index.html">
-<img alt="Logo" class="mr-2 dark:invert" height="24" src="../../_static/favicon.ico" width="24"/><span class="hidden font-bold sm:inline-block text-clip whitespace-nowrap">Arch Docs v0.1.5</span>
+<img alt="Logo" class="mr-2 dark:invert" height="24" src="../../_static/favicon.ico" width="24"/><span class="hidden font-bold sm:inline-block text-clip whitespace-nowrap">Arch Docs v0.3.2</span>
 </a></div><button @click="showSidebar = true" class="inline-flex items-center justify-center h-10 px-0 py-2 mr-2 text-base font-medium transition-colors rounded-md hover:text-accent-foreground hover:bg-transparent md:hidden" type="button">
 <svg aria-hidden="true" fill="currentColor" height="24" viewbox="0 96 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M152.587 825.087q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440Zm0-203.587q-19.152 0-32.326-13.174T107.087 576q0-19.152 13.174-32.326t32.326-13.174h320q19.152 0 32.326 13.174T518.087 576q0 19.152-13.174 32.326T472.587 621.5h-320Zm0-203.587q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440ZM708.913 576l112.174 112.174q12.674 12.674 12.674 31.826t-12.674 31.826Q808.413 764.5 789.261 764.5t-31.826-12.674l-144-144Q600 594.391 600 576t13.435-31.826l144-144q12.674-12.674 31.826-12.674t31.826 12.674q12.674 12.674 12.674 31.826t-12.674 31.826L708.913 576Z"></path>
@@ -75,7 +75,7 @@
 </header>
 <div class="flex-1"><div class="container flex-1 items-start md:grid md:grid-cols-[220px_minmax(0,1fr)] md:gap-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-10"><aside :aria-hidden="!showSidebar" :class="{ 'translate-x-0': showSidebar }" class="fixed inset-y-0 left-0 md:top-14 z-50 md:z-30 bg-background md:bg-transparent transition-all duration-100 -translate-x-full md:translate-x-0 ml-0 p-6 md:p-0 md:-ml-2 md:h-[calc(100vh-3.5rem)] w-5/6 md:w-full shrink-0 overflow-y-auto border-r border-border md:sticky" id="left-sidebar">
 <a class="!justify-start text-sm md:!hidden bg-background" href="../../index.html">
-<img alt="Logo" class="mr-2 dark:invert" height="16" src="../../_static/favicon.ico" width="16"/><span class="font-bold text-clip whitespace-nowrap">Arch Docs v0.1.5</span>
+<img alt="Logo" class="mr-2 dark:invert" height="16" src="../../_static/favicon.ico" width="16"/><span class="font-bold text-clip whitespace-nowrap">Arch Docs v0.3.2</span>
 </a>
 <div class="relative overflow-hidden md:overflow-auto my-4 md:my-0 h-[calc(100vh-8rem)] md:h-auto">
 <div class="overflow-y-auto h-full w-full relative pr-6">
@@ -114,7 +114,9 @@
 <p class="caption" role="heading"><span class="caption-text">Guides</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../guides/prompt_guard.html">Prompt Guard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/agent_routing.html">Agent Routing and Hand Off</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../guides/function_calling.html">Function Calling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/llm_router.html">LLM Routing</a></li>
 <li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="../../guides/observability/observability.html">Observability<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-show="expanded">
 <li class="toctree-l2"><a class="reference internal" href="../../guides/observability/tracing.html">Tracing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../guides/observability/monitoring.html">Monitoring</a></li>
@@ -124,8 +126,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Build with Arch</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../build_with_arch/agent.html">Agentic Workflow</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../build_with_arch/rag.html">RAG Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../build_with_arch/agent.html">Agentic Apps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../build_with_arch/rag.html">RAG Apps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../build_with_arch/multi_turn.html">Multi-Turn</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Resources</span></p>
 <ul>
@@ -144,7 +147,7 @@
 <div class="w-full min-w-0 mx-auto">
 <nav aria-label="breadcrumbs" class="flex items-center mb-4 space-x-1 text-sm text-muted-foreground">
 <a class="overflow-hidden text-ellipsis whitespace-nowrap hover:text-foreground" href="../../index.html">
-<span class="hidden md:inline">Arch Docs v0.1.5</span>
+<span class="hidden md:inline">Arch Docs v0.3.2</span>
 <svg aria-label="Home" class="md:hidden" fill="currentColor" height="18" stroke="none" viewbox="0 96 960 960" width="18" xmlns="http://www.w3.org/2000/svg">
 <path d="M240 856h120V616h240v240h120V496L480 316 240 496v360Zm-80 80V456l320-240 320 240v480H520V696h-80v240H160Zm320-350Z"></path>
 </svg>
@@ -159,7 +162,7 @@
 Arch relies on Envoy’s HTTP <a class="reference external" href="https://www.envoyproxy.io/docs/envoy/v1.31.2/intro/arch_overview/http/http_connection_management" rel="nofollow noopener">connection management<svg fill="currentColor" height="1em" stroke="none" viewbox="0 96 960 960" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M188 868q-11-11-11-28t11-28l436-436H400q-17 0-28.5-11.5T360 336q0-17 11.5-28.5T400 296h320q17 0 28.5 11.5T760 336v320q0 17-11.5 28.5T720 696q-17 0-28.5-11.5T680 656V432L244 868q-11 11-28 11t-28-11Z"></path></svg></a>,
 subsystem and its <strong>prompt handler</strong> subsystem engineered with purpose-built LLMs to
 implement critical functionality on behalf of developers so that you can stay focused on business logic.</p>
-<p>Arch’s <strong>prompt handler</strong> subsystem interacts with the <strong>model subsytem</strong> through Envoy’s cluster manager system to ensure robust, resilient and fault-tolerant experience in managing incoming prompts.</p>
+<p>Arch’s <strong>prompt handler</strong> subsystem interacts with the <strong>model subsystem</strong> through Envoy’s cluster manager system to ensure robust, resilient and fault-tolerant experience in managing incoming prompts.</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <p>Read more about the <a class="reference internal" href="model_serving.html#model-serving"><span class="std std-ref">model subsystem</span></a> and how the LLMs are hosted in Arch.</p>
@@ -179,27 +182,27 @@ containing two key-value pairs:</p>
 <section id="prompt-guard">
 <h2>Prompt Guard<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#prompt-guard" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#prompt-guard'"><svg height="1em" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h2>
 <p>Arch is engineered with <a class="reference external" href="https://huggingface.co/collections/katanemo/arch-guard-6702bdc08b889e4bce8f446d" rel="nofollow noopener">Arch-Guard<svg fill="currentColor" height="1em" stroke="none" viewbox="0 96 960 960" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M188 868q-11-11-11-28t11-28l436-436H400q-17 0-28.5-11.5T360 336q0-17 11.5-28.5T400 296h320q17 0 28.5 11.5T760 336v320q0 17-11.5 28.5T720 696q-17 0-28.5-11.5T680 656V432L244 868q-11 11-28 11t-28-11Z"></path></svg></a>, an industry leading safety layer, powered by a
-compact and high-performimg LLM that monitors incoming prompts to detect and reject jailbreak attempts -
+compact and high-performing LLM that monitors incoming prompts to detect and reject jailbreak attempts -
 ensuring that unauthorized or harmful behaviors are intercepted early in the process.</p>
 <p>To add jailbreak guardrails, see example below:</p>
 <div class="literal-block-wrapper docutils container" id="id1">
 <div class="code-block-caption"><span class="caption-text">Example Configuration</span><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#id1"><svg height="1em" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></div>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="linenos"> 1</span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v0.1</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="linenos"> 1</span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v0.1.0</span>
 </span><span id="line-2"><span class="linenos"> 2</span>
-</span><span id="line-3"><span class="linenos"> 3</span><span class="nt">listener</span><span class="p">:</span>
-</span><span id="line-4"><span class="linenos"> 4</span><span class="w">  </span><span class="nt">address</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.0.0.0</span><span class="w"> </span><span class="c1"># or 127.0.0.1</span>
-</span><span id="line-5"><span class="linenos"> 5</span><span class="w">  </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10000</span>
-</span><span id="line-6"><span class="linenos"> 6</span><span class="w">  </span><span class="c1"># Defines how Arch should parse the content from application/json or text/pain Content-type in the http request</span>
-</span><span id="line-7"><span class="linenos"> 7</span><span class="w">  </span><span class="nt">message_format</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">huggingface</span>
-</span><span id="line-8"><span class="linenos"> 8</span>
-</span><span id="line-9"><span class="linenos"> 9</span><span class="c1"># Centralized way to manage LLMs, manage keys, retry logic, failover and limits in a central way</span>
-</span><span id="line-10"><span class="linenos">10</span><span class="nt">llm_providers</span><span class="p">:</span>
-</span><span id="line-11"><span class="linenos">11</span><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">OpenAI</span>
-</span><span id="line-12"><span class="linenos">12</span><span class="w">    </span><span class="nt">provider</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">openai</span>
-</span><span id="line-13"><span class="linenos">13</span><span class="w">    </span><span class="nt">access_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$OPENAI_API_KEY</span>
-</span><span id="line-14"><span class="linenos">14</span><span class="w">    </span><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gpt-4o</span>
-</span><span id="line-15"><span class="linenos">15</span><span class="w">    </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-</span><span id="line-16"><span class="linenos">16</span><span class="w">    </span><span class="nt">stream</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="line-3"><span class="linenos"> 3</span><span class="nt">listeners</span><span class="p">:</span>
+</span><span id="line-4"><span class="linenos"> 4</span><span class="w">  </span><span class="nt">ingress_traffic</span><span class="p">:</span>
+</span><span id="line-5"><span class="linenos"> 5</span><span class="w">    </span><span class="nt">address</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.0.0.0</span>
+</span><span id="line-6"><span class="linenos"> 6</span><span class="w">    </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10000</span>
+</span><span id="line-7"><span class="linenos"> 7</span><span class="w">    </span><span class="nt">message_format</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">openai</span>
+</span><span id="line-8"><span class="linenos"> 8</span><span class="w">    </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30s</span>
+</span><span id="line-9"><span class="linenos"> 9</span>
+</span><span id="line-10"><span class="linenos">10</span><span class="c1"># Centralized way to manage LLMs, manage keys, retry logic, failover and limits in a central way</span>
+</span><span id="line-11"><span class="linenos">11</span><span class="nt">llm_providers</span><span class="p">:</span>
+</span><span id="line-12"><span class="linenos">12</span><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">OpenAI</span>
+</span><span id="line-13"><span class="linenos">13</span><span class="w">    </span><span class="nt">provider_interface</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">openai</span>
+</span><span id="line-14"><span class="linenos">14</span><span class="w">    </span><span class="nt">access_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$OPENAI_API_KEY</span>
+</span><span id="line-15"><span class="linenos">15</span><span class="w">    </span><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gpt-4o</span>
+</span><span id="line-16"><span class="linenos">16</span><span class="w">    </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </span><span id="line-17"><span class="linenos">17</span>
 </span><span id="line-18"><span class="linenos">18</span><span class="c1"># default system prompt used by all prompt targets</span>
 </span><span id="line-19"><span class="linenos">19</span><span class="nt">system_prompt</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">You are a network assistant that just offers facts; not advice on manufacturers or purchasing decisions.</span>
@@ -222,28 +225,28 @@ etc. To offer feedback on our roadmap, please visit our <a class="reference exte
 <section id="prompt-targets">
 <h2>Prompt Targets<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#prompt-targets" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#prompt-targets'"><svg height="1em" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h2>
 <p>Once a prompt passes any configured guardrail checks, Arch processes the contents of the incoming conversation
-and identifies where to forwad the conversation to via its <code class="docutils literal notranslate"><span class="pre">prompt</span> <span class="pre">target</span></code> primitve. Prompt targets are endpoints
+and identifies where to forward the conversation to via its <code class="docutils literal notranslate"><span class="pre">prompt</span> <span class="pre">target</span></code> primitive. Prompt targets are endpoints
 that receive prompts that are processed by Arch. For example, Arch enriches incoming prompts with metadata like knowing
 when a user’s intent has changed so that you can build faster, more accurate RAG apps.</p>
 <p>Configuring <code class="docutils literal notranslate"><span class="pre">prompt_targets</span></code> is simple. See example below:</p>
 <div class="literal-block-wrapper docutils container" id="id2">
 <div class="code-block-caption"><span class="caption-text">Example Configuration</span><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#id2"><svg height="1em" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></div>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="linenos"> 1</span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v0.1</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="linenos"> 1</span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v0.1.0</span>
 </span><span id="line-2"><span class="linenos"> 2</span>
-</span><span id="line-3"><span class="linenos"> 3</span><span class="nt">listener</span><span class="p">:</span>
-</span><span id="line-4"><span class="linenos"> 4</span><span class="w">  </span><span class="nt">address</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.0.0.0</span><span class="w"> </span><span class="c1"># or 127.0.0.1</span>
-</span><span id="line-5"><span class="linenos"> 5</span><span class="w">  </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10000</span>
-</span><span id="line-6"><span class="linenos"> 6</span><span class="w">  </span><span class="c1"># Defines how Arch should parse the content from application/json or text/pain Content-type in the http request</span>
-</span><span id="line-7"><span class="linenos"> 7</span><span class="w">  </span><span class="nt">message_format</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">huggingface</span>
-</span><span id="line-8"><span class="linenos"> 8</span>
-</span><span id="line-9"><span class="linenos"> 9</span><span class="c1"># Centralized way to manage LLMs, manage keys, retry logic, failover and limits in a central way</span>
-</span><span id="line-10"><span class="linenos">10</span><span class="nt">llm_providers</span><span class="p">:</span>
-</span><span id="line-11"><span class="linenos">11</span><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">OpenAI</span>
-</span><span id="line-12"><span class="linenos">12</span><span class="w">    </span><span class="nt">provider</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">openai</span>
-</span><span id="line-13"><span class="linenos">13</span><span class="w">    </span><span class="nt">access_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$OPENAI_API_KEY</span>
-</span><span id="line-14"><span class="linenos">14</span><span class="w">    </span><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gpt-4o</span>
-</span><span id="line-15"><span class="linenos">15</span><span class="w">    </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-</span><span id="line-16"><span class="linenos">16</span><span class="w">    </span><span class="nt">stream</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="line-3"><span class="linenos"> 3</span><span class="nt">listeners</span><span class="p">:</span>
+</span><span id="line-4"><span class="linenos"> 4</span><span class="w">  </span><span class="nt">ingress_traffic</span><span class="p">:</span>
+</span><span id="line-5"><span class="linenos"> 5</span><span class="w">    </span><span class="nt">address</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.0.0.0</span>
+</span><span id="line-6"><span class="linenos"> 6</span><span class="w">    </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10000</span>
+</span><span id="line-7"><span class="linenos"> 7</span><span class="w">    </span><span class="nt">message_format</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">openai</span>
+</span><span id="line-8"><span class="linenos"> 8</span><span class="w">    </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30s</span>
+</span><span id="line-9"><span class="linenos"> 9</span>
+</span><span id="line-10"><span class="linenos">10</span><span class="c1"># Centralized way to manage LLMs, manage keys, retry logic, failover and limits in a central way</span>
+</span><span id="line-11"><span class="linenos">11</span><span class="nt">llm_providers</span><span class="p">:</span>
+</span><span id="line-12"><span class="linenos">12</span><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">OpenAI</span>
+</span><span id="line-13"><span class="linenos">13</span><span class="w">    </span><span class="nt">provider_interface</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">openai</span>
+</span><span id="line-14"><span class="linenos">14</span><span class="w">    </span><span class="nt">access_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$OPENAI_API_KEY</span>
+</span><span id="line-15"><span class="linenos">15</span><span class="w">    </span><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gpt-4o</span>
+</span><span id="line-16"><span class="linenos">16</span><span class="w">    </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </span><span id="line-17"><span class="linenos">17</span>
 </span><span id="line-18"><span class="linenos">18</span><span class="c1"># default system prompt used by all prompt targets</span>
 </span><span id="line-19"><span class="linenos">19</span><span class="nt">system_prompt</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">You are a network assistant that just offers facts; not advice on manufacturers or purchasing decisions.</span>
@@ -282,20 +285,15 @@ when a user’s intent has changed so that you can build faster, more accurate R
 </mark></span><span id="line-52"><mark><span class="linenos">52</span><span class="w">        </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
 </mark></span><span id="line-53"><mark><span class="linenos">53</span><span class="w">        </span><span class="nt">enum</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">true</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">false</span><span class="p p-Indicator">]</span>
 </mark></span><span id="line-54"><span class="linenos">54</span>
-</span><span id="line-55"><span class="linenos">55</span><span class="nt">error_target</span><span class="p">:</span>
-</span><span id="line-56"><span class="linenos">56</span><span class="w">  </span><span class="nt">endpoint</span><span class="p">:</span>
-</span><span id="line-57"><span class="linenos">57</span><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">error_target_1</span>
-</span><span id="line-58"><span class="linenos">58</span><span class="w">    </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/error</span>
-</span><span id="line-59"><span class="linenos">59</span>
-</span><span id="line-60"><span class="linenos">60</span><span class="c1"># Arch creates a round-robin load balancing between different endpoints, managed via the cluster subsystem.</span>
-</span><span id="line-61"><span class="linenos">61</span><span class="nt">endpoints</span><span class="p">:</span>
-</span><span id="line-62"><span class="linenos">62</span><span class="w">  </span><span class="nt">app_server</span><span class="p">:</span>
-</span><span id="line-63"><span class="linenos">63</span><span class="w">    </span><span class="c1"># value could be ip address or a hostname with port</span>
-</span><span id="line-64"><span class="linenos">64</span><span class="w">    </span><span class="c1"># this could also be a list of endpoints for load balancing</span>
-</span><span id="line-65"><span class="linenos">65</span><span class="w">    </span><span class="c1"># for example endpoint: [ ip1:port, ip2:port ]</span>
-</span><span id="line-66"><span class="linenos">66</span><span class="w">    </span><span class="nt">endpoint</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">127.0.0.1:80</span>
-</span><span id="line-67"><span class="linenos">67</span><span class="w">    </span><span class="c1"># max time to wait for a connection to be established</span>
-</span><span id="line-68"><span class="linenos">68</span><span class="w">    </span><span class="nt">connect_timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.005s</span>
+</span><span id="line-55"><span class="linenos">55</span><span class="c1"># Arch creates a round-robin load balancing between different endpoints, managed via the cluster subsystem.</span>
+</span><span id="line-56"><span class="linenos">56</span><span class="nt">endpoints</span><span class="p">:</span>
+</span><span id="line-57"><span class="linenos">57</span><span class="w">  </span><span class="nt">app_server</span><span class="p">:</span>
+</span><span id="line-58"><span class="linenos">58</span><span class="w">    </span><span class="c1"># value could be ip address or a hostname with port</span>
+</span><span id="line-59"><span class="linenos">59</span><span class="w">    </span><span class="c1"># this could also be a list of endpoints for load balancing</span>
+</span><span id="line-60"><span class="linenos">60</span><span class="w">    </span><span class="c1"># for example endpoint: [ ip1:port, ip2:port ]</span>
+</span><span id="line-61"><span class="linenos">61</span><span class="w">    </span><span class="nt">endpoint</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">127.0.0.1:80</span>
+</span><span id="line-62"><span class="linenos">62</span><span class="w">    </span><span class="c1"># max time to wait for a connection to be established</span>
+</span><span id="line-63"><span class="linenos">63</span><span class="w">    </span><span class="nt">connect_timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.005s</span>
 </span></code></pre></div>
 </div>
 </div>
@@ -307,7 +305,7 @@ when a user’s intent has changed so that you can build faster, more accurate R
 <h3>Intent Matching<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#intent-matching" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#intent-matching'"><svg height="1em" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h3>
 <p>Arch uses fast text embedding and intent recognition approaches to first detect the intent of each incoming prompt.
 This intent matching phase analyzes the prompt’s content and matches it against predefined prompt targets, ensuring that each prompt is forwarded to the most appropriate endpoint.
-Arch’s intent matching framework considers both the name and description of each prompt target, and uses a composite matching score between embedding similarity and intent classification scores to enchance accuracy in forwarding decisions.</p>
+Arch’s intent matching framework considers both the name and description of each prompt target, and uses a composite matching score between embedding similarity and intent classification scores to enhance accuracy in forwarding decisions.</p>
 <ul class="simple">
 <li><p><strong>Intent Recognition</strong>: NLI techniques further refine the matching process by evaluating the semantic alignment between the prompt and potential targets.</p></li>
 <li><p><strong>Text Embedding</strong>: By embedding the prompt and comparing it to known target vectors, Arch effectively identifies the closest match, ensuring that the prompt is handled by the correct downstream service.</p></li>
@@ -321,7 +319,7 @@ For more details on how you can build agentic applications using Arch, see our f
 <p class="admonition-title">Note</p>
 <p><a class="reference external" href="https://huggingface.co/collections/katanemo/arch-function-66f209a693ea8df14317ad68" rel="nofollow noopener">Arch-Function<svg fill="currentColor" height="1em" stroke="none" viewbox="0 96 960 960" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M188 868q-11-11-11-28t11-28l436-436H400q-17 0-28.5-11.5T360 336q0-17 11.5-28.5T400 296h320q17 0 28.5 11.5T760 336v320q0 17-11.5 28.5T720 696q-17 0-28.5-11.5T680 656V432L244 868q-11 11-28 11t-28-11Z"></path></svg></a> is a collection of dedicated agentic models engineered in Arch to extract information from a (set of) prompts and executes necessary backend API calls.
 This allows for efficient handling of agentic tasks, such as scheduling data retrieval, by dynamically interacting with backend services.
-Arch-Function achieves state-of-the-art performance, comparable with frontier models like Claude Sonnet 3.5 ang GPT-4, while being 100x cheaper ($0.05M/token hosted) and 10x faster (p50 latencies of 200ms).</p>
+Arch-Function achieves state-of-the-art performance, comparable with frontier models like Claude Sonnet 3.5 ang GPT-4, while being 44x cheaper ($0.10M/token hosted) and 10x faster (p50 latencies of 200ms).</p>
 </div>
 </section>
 </section>
@@ -339,7 +337,7 @@ By sending traffic through Arch, you can propagate traces, manage and monitor tr
 </div>
 <section id="example-using-openai-client-with-arch-as-an-egress-gateway">
 <h3>Example: Using OpenAI Client with Arch as an Egress Gateway<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#example-using-openai-client-with-arch-as-an-egress-gateway" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#example-using-openai-client-with-arch-as-an-egress-gateway'"><svg height="1em" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="kn">import</span> <span class="nn">openai</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="kn">import</span><span class="w"> </span><span class="nn">openai</span>
 </span><span id="line-2">
 </span><span id="line-3"><span class="c1"># Set the OpenAI API base URL to the Arch gateway endpoint</span>
 </span><span id="line-4"><span class="n">openai</span><span class="o">.</span><span class="n">api_base</span> <span class="o">=</span> <span class="s2">"http://127.0.0.1:12000"</span>
@@ -400,12 +398,12 @@ This setup allows you to take advantage of Arch’s advanced traffic management 
 </div><footer class="py-6 border-t border-border md:py-0">
 <div class="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
 <div class="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
-<p class="text-sm leading-loose text-center text-muted-foreground md:text-left">© 2024, Katanemo Labs, Inc Last updated: Dec 12, 2024. </p>
+<p class="text-sm leading-loose text-center text-muted-foreground md:text-left">© 2025, Katanemo Labs, Inc Last updated: Jun 28, 2025. </p>
 </div>
 </div>
 </footer>
 </div>
-<script src="../../_static/documentation_options.js?v=10d53aa0"></script>
+<script src="../../_static/documentation_options.js?v=d0477509"></script>
 <script src="../../_static/doctools.js?v=9bcbadda"></script>
 <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
 <script defer="defer" src="../../_static/theme.js?v=073f68d9"></script>
